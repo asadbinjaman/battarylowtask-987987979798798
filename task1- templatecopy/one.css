@@ -1,0 +1,303 @@
+body {
+  font-family: "century gothic", arial, sans-serif;
+  letter-spacing: 0.01rem;
+  width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    "head"
+    "mid";
+}
+
+#top {
+  font-family: "century gothic", arial, sans-serif;
+  grid-area: head;
+  margin-bottom: 0.1rem;
+}
+#home {
+  /* border: 1px solid black; */
+  height: 150px;
+  display: table-cell;
+  vertical-align: middle;
+}
+#home .logo {
+  word-spacing: -1.2rem;
+  font-size: 2.3rem;
+  cursor: pointer;
+}
+.logo a {
+  text-decoration: none;
+}
+
+#home .dialog {
+  font-size: 0.8rem;
+  word-spacing: 0.1rem;
+}
+
+#menu {
+  /* border: 1px solid rgb(255, 21, 21); */
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  background-color: black;
+  color: white;
+}
+
+#menu ul {
+  /* border: 1px solid rgb(255, 255, 255); */
+  list-style: none;
+  display: inline-flex;
+  margin: 0;
+  padding: 10px 5px;
+}
+#menu ul > * {
+  /* border: 1px solid rgb(255, 255, 255); */
+  margin: 0 5px;
+}
+
+#menu ul li {
+  /* display: block; */
+
+  padding: 5px;
+  /* margin: 0 5px; */
+  /* padding: 0; */
+}
+
+#menu ul li {
+  /* padding: 5px 0; */
+}
+
+#menu ul li a {
+  /* margin: 0; */
+  height: 2rm;
+  padding: 5px 27px;
+  /* border: 1px solid rgb(191, 255, 0); */
+  text-decoration: none;
+  color: inherit;
+}
+#menu ul li:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #f60056;
+}
+#menu ul .selected {
+  background-color: rgb(255, 255, 255);
+  color: #f60056;
+}
+
+#mid {
+  background-color: black;
+  font-family: arial, sans-serif;
+  display: grid;
+  grid-area: mid;
+  grid-template-columns: 70%;
+  grid-template-areas: "left right";
+}
+#left {
+  grid-area: left;
+}
+#right {
+  grid-area: right;
+}
+
+#mid > * {
+  margin: 0;
+  padding: 15px;
+}
+.custom-heading h1 {
+  font-size: 1.5rem;
+}
+.custom-heading h2 {
+  font-size: 1.5rem;
+}
+.custom-heading h3 {
+  font-size: 1.5rem;
+}
+.custom-heading h4 {
+  font-size: 1rem;
+}
+.custom-heading h5 {
+  font-size: 0.8rem;
+}
+.custom-heading h6 {
+  font-size: 0.8rem;
+}
+
+.pink-text {
+  color: #f6007f;
+}
+
+.title {
+  font-size: 1.4rem;
+  color: #f6007f;
+  margin-bottom: 1.5rem;
+}
+.news_title {
+  font-size: 0.9rem;
+  color: #f6007f;
+}
+.news_date {
+  font-size: 0.9rem;
+  color: #f6007f;
+}
+.content *,
+.news_content * {
+  font-size: 0.8rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.content p,
+.news_content p {
+  line-height: 1.5rem;
+}
+
+.custom-table table {
+  border-collapse: collapse;
+  text-align: left;
+  background-color: white;
+  width: 100%;
+}
+
+.custom-table th.item {
+  width: 25%;
+}
+.custom-table th.details {
+  width: 75%;
+}
+.custom-table th {
+  padding: 7px 4px;
+  background-color: #3b3b3b;
+  color: white;
+}
+.custom-table td {
+  padding: 7px 4px;
+  background-color: #f0efe2;
+  color: black;
+  border-top: 1px solid white;
+}
+
+.custom-form {
+  width: 85%;
+  
+  display: block;
+}
+
+.custom-form div {
+  max-width: inherit;
+  
+  margin: 0;
+  display: flex;
+}
+
+.custom-form div label {
+  width: 35%;
+}
+.custom-form div input[type="text"]{
+  margin: .2rem 0;
+
+}
+.custom-form div input[type="text"],
+textarea,
+select {
+  width: 65%;
+}
+
+.custom-form div input[type="text"],
+.custom-form div textarea,
+.custom-form div select,
+.custom-form div select option {
+  color: black;
+}
+
+.custom-form .submit input[type="submit"] {
+  margin-left: auto;
+  border: 1px solid white;
+  cursor: pointer;
+  background: black;
+  padding: 10px 35px;
+}
+
+
+
+
+
+.link ul li {
+  list-style: none;
+  list-style-image: url("images/link.png");
+  margin-right: 1rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.link ul * {
+  color: white;
+}
+
+.custom-li-style ol,
+.custom-li-style ul {
+  padding-left: 1rem;
+}
+
+.custom-li-style ol li,
+.custom-li-style ul li {
+  margin-bottom: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+.custom-li-style ul li {
+  list-style: none;
+  list-style-image: url("images/bullet.png");
+}
+
+.images div {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
+.images img {
+  height: 5rem;
+  margin: 0;
+}
+.images .leftalign img {
+  float: left;
+  padding-right: 1rem;
+}
+.images .midalign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.images .rightalign img {
+  float: right;
+  padding-left: 1rem;
+}
+.search > * {
+  display: flex;
+  align-items: normal;
+  justify-content: left;
+}
+
+.search button[type="submit"] {
+  all: unset;
+  cursor: pointer;
+}
+.search img {
+  height: 1.8rem;
+}
+
+footer {
+  margin: auto;
+  padding: 5px;
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+}
+
+#foot {
+  text-transform: uppercase;
+}
+#foot a {
+  text-decoration: none;
+}
+#foot a:hover {
+  text-decoration: underline;
+}
